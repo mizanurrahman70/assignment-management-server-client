@@ -177,8 +177,9 @@ export function AppShell({ children }: { children: ReactNode }) {
 
   return (
     <div className="min-h-screen">
+      <div className="mx-auto w-full  lg:flex">
       <div
-        className={`fixed inset-y-0 left-0 z-40 w-64 transform bg-white ring-1 ring-gray-200 transition-transform lg:static lg:translate-x-0 ${
+        className={`fixed inset-y-0 left-0 h-screen z-40 w-64 transform bg-white ring-1 ring-gray-200 transition-transform lg:static lg:translate-x-0 ${
           mobileOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -217,7 +218,10 @@ export function AppShell({ children }: { children: ReactNode }) {
           </button>
           {brandMark()}
         </header>
-        <main className="flex-1 px-4 py-6 sm:px-6 lg:px-8">{children}</main>
+        <main className="flex-1 px-4 py-6 sm:px-6 lg:px-8">
+          <div className="w-full px-4 sm:px-6 lg:px-8">{children}</div>
+        </main>
+      </div>
       </div>
     </div>
   );

@@ -81,7 +81,7 @@ export default function ClassSubjectsPage() {
   };
 
   return (
-    <div className="mx-auto max-w-6xl space-y-6">
+    <div className="mx-auto  space-y-6">
       <PageHeader
         title="Teacher Assignments"
         description="Link classes and subjects to the teachers who teach them."
